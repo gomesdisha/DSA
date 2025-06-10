@@ -5,7 +5,7 @@ void print1(int n)
 {   int i,j;
     for(i=0;i<n;i++)
     {
-        for(j=0;j<i+1;j++)
+        for(j=0;j<=i;j++)
         {
             cout<< "* " ;
         }
@@ -15,12 +15,12 @@ void print1(int n)
 
 int main()
 {
-    int t;
-    cin>>t;
-    for(int i=0;i<t;i++)
-    {
+    // int t;
+    // cin>>t;
+    // for(int i=0;i<t;i++)
+    // {
         int n;
         cin>>n;
         print1(n);
-    }
+    //}
 }

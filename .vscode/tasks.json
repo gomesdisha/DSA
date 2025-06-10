@@ -6,9 +6,9 @@
 		"type": "shell",
 		"command": "g++",
 		"args": [
-			"${file}",
+			"\"${file}\"",
 			"-o",
-			"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			"\"${fileDirname}\\${fileBasenameNoExtension}.exe\""
 		],
 		"problemMatcher": [
 			"$gcc"
