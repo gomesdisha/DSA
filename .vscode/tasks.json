@@ -1,39 +1,36 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-	  {
-		"type": "cppbuild",
-		"label": "C/C++: cl.exe build active file",
-		"command": "cl.exe",
-		"args": [
-		  "/Zi",
-		  "/EHsc",
-		  "/nologo",
-		  "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
-		  "${file}"
-		],
-		"options": {
-		  "cwd": "${fileDirname}"
-		},
-		"problemMatcher": [
-		  "$msCompile"
-		],
-		"group": "build",
-		"detail": "compiler: cl.exe"
-	  },
-	  {
-		"label": "Run C++ program with input",
-		"type": "shell",
-		"command": "${fileDirname}\\${fileBasenameNoExtension}.exe < input.txt > output.txt",
-		"problemMatcher": [],
-		"dependsOn": "C/C++: cl.exe build active file"
-	  },
-	  {
-		"type": "Live Preview",
-		"workspacePath": "c:\\Users\\disha\\OneDrive\\Desktop\\DSA",
-		"problemMatcher": [],
-		"label": "Live Preview: Run Server"
-	  }
-	]
-  }
-  
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C/C++: g++.exe build active file",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "compiler: g++"
+    },
+    {
+      "label": "Run C++ program with input",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe < input.txt > output.txt"
+      ],
+      "problemMatcher": [],
+      "dependsOn": "C/C++: g++.exe build active file",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+  ]
+}
