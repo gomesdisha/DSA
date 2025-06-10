@@ -9,8 +9,8 @@ void print1(int n)
         {
             cout<< "* " ;
         }
-    }
-    cout<<endl;
+         cout<<endl;
+    } 
 }
 
 int main()
@@ -22,5 +22,6 @@ int main()
         int n;
         cin>>n;
         print1(n);
+        cout<<endl;
     //}
 }
