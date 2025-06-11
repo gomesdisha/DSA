@@ -3,16 +3,20 @@ using namespace std;
 
 void print1(int n)
 {
-    int i,j,k;
+    int i,j;
     for(i=0;i<n;i++)
-    {   for(k=0;k<=n-i-1;k++)
+    {   for(j=0;j<n-i-1;j++)
         {
             cout<<" ";
         }
-        for(j=1;j<=2*i+1;j++)
+        for(j=0;j<2*i+1;j++)
         {
-            cout<<"* ";
+            cout<<"*";
         }
+        //  for(j=0;j<n-i-1;j++)
+        // {
+        //     cout<<" ";
+        // }
         cout<<endl;
     }
 }
