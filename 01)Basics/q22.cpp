@@ -7,7 +7,7 @@ void print1(int n)
     for(i = 0; i < (2*n)-1; i++)
     {
         for(j = 0; j <(2*n)-1; j++)
-        {
+        {   while()
             cout << n ;
         }
         cout << endl;
