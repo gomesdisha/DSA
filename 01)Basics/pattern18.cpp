@@ -7,8 +7,8 @@ void print1(int n)
     for(i = 0; i < n; i++)
     {
         for(j = 0; j <= i; j++)
-        {
-            cout << ;
+        {   char ch ='A'+n-1-j;
+            cout << ch ;
         }
         cout << endl;
     }
