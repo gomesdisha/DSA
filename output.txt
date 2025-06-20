@@ -1,7 +1,1 @@
-divisors are : 
-1
-12
-2
-6
-3
-4
+it is a prime number

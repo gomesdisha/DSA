@@ -9,7 +9,7 @@ void math(int n)
     //      cout<<i<<endl;
     // 
     //}
-    for(int i=1;i<=sqrt(n);i++)
+    for(int i=1;i<=sqrt(n);i++)//o(sqrt(n)) is the time complexity
     {
         if(n%i==0)
         cout<<i<<endl<<n/i<<endl;
