@@ -1,1 +1,1 @@
-reverse = 954
+ is palindrome
