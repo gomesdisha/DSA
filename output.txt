@@ -1,1 +1,1 @@
-gcd of 20 and 15 is = 1
+its an armstrong number
