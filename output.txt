@@ -1,1 +1,10 @@
-its an armstrong number
+divisors are : 
+1
+2
+3
+4
+6
+9
+12
+18
+36
