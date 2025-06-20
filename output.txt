@@ -1,1 +1,1 @@
- is palindrome
+gcd of 20 and 15 is = 1
