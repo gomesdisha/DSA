@@ -1,34 +1,31 @@
 {
   "version": "2.0.0",
   "tasks": [
-	{
-		"label": "Build C++",
-		"type": "shell",
-		"command": "g++",
-		"args": [
-			"\"${file}\"",
-			"-o",
-			"\"${fileDirname}\\${fileBasenameNoExtension}.exe\""
-		],
-		"problemMatcher": [
-			"$gcc"
-		],
-		"group": "build"
-	},
-	{
-		"label": "Run with input",
-		"type": "shell",
-		"command": "cmd.exe",
-		"args": [
-			"/c",
-			"${fileDirname}\\${fileBasenameNoExtension}.exe < input.txt > output.txt"
-		],
-		"problemMatcher": [],
-		"dependsOn": "Build C++",
-		"group": {
-			"kind": "build",
-			"isDefault": true
-		}
-	}
-]
+    {
+      "label": "Build C++",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Run with input",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe < ${workspaceFolder}\\input.txt > ${workspaceFolder}\\output.txt"
+      ],
+      "problemMatcher": [],
+      "dependsOn": "Build C++",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
 }

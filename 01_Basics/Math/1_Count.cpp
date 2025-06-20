@@ -1,21 +1,22 @@
 //count digits of a number
 #include<bits/stdc++.h>
 using namespace std;
-void countDigits(int n)
+int countDigits(int n)
 {
    int count = 0;
-   while(n!=0)
+   while(n>0)
    {
-      n=n%10;
       count++;
+      n=n/10;
    }
-   //return count;
-   cout<<"count is "<<count;
+   return count;
+   
 }
 int main()
 {
    int n;
    cin>>n;
-   countDigits(n);
+   int count1 = countDigits(n);
+   cout<<"count is "<<count1;
    return 0; 
 }
