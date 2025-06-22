@@ -1,18 +1,28 @@
 #include<bits/stdc++.h>
 using namespace std;
-int cnt = 0;
-void rec(int n)
-{  
-    if(cnt == n)
+//int cnt = 0;
+// void rec(int n)  this is using global variable cnt and only 1 parameter
+// {  
+//     if(cnt == n)
+//         return;
+//     cout<<"Disha Gomes "<<endl;
+//      cnt++;
+//     rec(n);
+//}
+
+void recur(int i,int n)
+{
+    if(i>n)
         return;
-    cout<<"Disha Gomes "<<endl;
-     cnt++;
-    rec(n);
+    cout<<"Disha Gomes"<<endl;
+    i++;
+    recur(i,n);
 }
 int main()
 {
     int n;
     cin>>n;
-    rec(n);
+    //rec(n);
+    recur(1,n);
     return 0;
 }
