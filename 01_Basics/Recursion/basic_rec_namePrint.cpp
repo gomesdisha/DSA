@@ -10,7 +10,7 @@ using namespace std;
 //     rec(n);
 //}
 
-void recur(int i,int n)
+void recur(int i,int n)//used multiple parameter for recursion, no global var
 {
     if(i>n)
         return;
