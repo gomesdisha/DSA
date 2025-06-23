@@ -1,1 +1,5 @@
-factorial of 5 is 120
+5
+4
+3
+2
+1
