@@ -1,1 +1,1 @@
- is a palindrome 
+7th fibannoci number is 13
