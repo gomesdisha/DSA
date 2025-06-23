@@ -1,1 +1,1 @@
-sum of 5 numbers is 15
+factorial of 5 is 120
