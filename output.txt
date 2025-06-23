@@ -1,1 +1,1 @@
-factorial of 6 is 720
+4 2 9 8 6 5 3 2 1 
